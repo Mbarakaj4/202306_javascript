@@ -1,23 +1,58 @@
-/*CSS Reset*/
+/* CSS Reset */
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-/*Font configuration*/
-body {
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Apply flex */
+main,
+body,
 header,
-main {
+input {
     display: flex;
-    justify-content: space-between;
+}
+
+/* Font configuration and centering */
+body,
+button {
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    height: 80px; /*80 is default for my styling*/
-    /*width: 1000px; 1000 is default for my styling*/
+    background-color: lightgray;
+    color: black;
+    /* 80 is default for my styling */
+    height: 80px;
+    /* 1000 is default for my styling */
+    width: 1000px;
+    padding-left: 1%;
+    padding-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    align-items: center;
+}
+
+header input {
+    border: 2px solid black;
+    color: gray;
+    height: 30px;
+    width: 400px;
+    align-items: center;
+    padding-left: 5px;
+}
+
+header button {
+    height: 35px;
+    width: 100px;
+    background-color: #2B78E4;
+    color: white;
+    border: 2px solid black;
+    font-size: 16px;
+    box-shadow: 5px 5px black;
+    align-items: center;
 }
