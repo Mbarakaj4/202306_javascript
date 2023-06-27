@@ -1,0 +1,23 @@
+/*CSS Reset*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*Font configuration*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    height: 80px; /*80 is default for my styling*/
+    /*width: 1000px; 1000 is default for my styling*/
+}
