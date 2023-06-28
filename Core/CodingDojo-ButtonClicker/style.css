@@ -3,21 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Apply flex */
-main,
+
 body,
 header,
-input {
+input,
+main {
     display: flex;
 }
 
-/* Font configuration and centering */
-body,
-button {
-    font-family: 'Roboto', sans-serif;
-    justify-content: center;
+body {
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
@@ -55,4 +55,34 @@ header button {
     font-size: 16px;
     box-shadow: 5px 5px black;
     align-items: center;
+}
+
+main {
+    border: 2px solid black;
+    
+    width: 1000px;
+}
+
+main article {
+    border: 2px solid black;
+    margin: 4%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 25%;
+}
+
+main aside {
+    border-left: 2px solid black;
+    width: 25%;
+}
+
+.col {
+    flex: 1;
+}
+
+.col2 {
+    flex: 2;
+}
+.row {
+
 }
