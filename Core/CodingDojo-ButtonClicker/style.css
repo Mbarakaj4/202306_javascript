@@ -1,58 +1,180 @@
-/* CSS Reset */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Roboto";
 }
-
-/* Apply flex */
-main,
-body,
-header,
-input {
+header{
     display: flex;
-}
-
-/* Font configuration and centering */
-body,
-button {
-    font-family: 'Roboto', sans-serif;
-    justify-content: center;
-}
-
-header {
-    background-color: lightgray;
-    color: black;
-    /* 80 is default for my styling */
+    background-color: rgb(141, 141, 141);
+    max-width: 1000px;
     height: 80px;
-    /* 1000 is default for my styling */
-    width: 1000px;
-    padding-left: 1%;
-    padding-right: 5%;
-    justify-content: space-between;
+    margin: 0 auto;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: #111;
+    
 }
-
-header h1 {
+h1{
+    color:white;
+}
+/* a.btn {
+    display: block;
+    background-color: #196bca;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 10px 10px;
     align-items: center;
-}
-
-header input {
-    border: 2px solid black;
-    color: gray;
-    height: 30px;
-    width: 400px;
-    align-items: center;
-    padding-left: 5px;
-}
-
-header button {
+    box-shadow: 0px 0px 10px 0px #2d2d2d;
+    min-width: 50.6px;
+    text-align: center;
+  }
+  a.btn:hover {
+    background-color: #5482d0;
+  }
+  a.btn:active {
+    transform: scale(0.95);
+  } */
+  #search-bar{
+    border: none;
     height: 35px;
-    width: 100px;
-    background-color: #2B78E4;
-    color: white;
-    border: 2px solid black;
-    font-size: 16px;
-    box-shadow: 5px 5px black;
-    align-items: center;
+    width: 20vw;
+    border-radius: 15px;
+  }
+  #search-bar::placeholder{
+    text-align: center;
+  }
+ 
+/* CSS */
+.btn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+header {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    position: relative;
+    z-index: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  header:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+   
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  header:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+   
+  }
