@@ -58,22 +58,18 @@ header button {
 }
 
 main {
-    border: 2px solid black;
-    
+    height: 500px;
     width: 1000px;
 }
 
 main article {
     border: 2px solid black;
-    margin: 4%;
     justify-content: flex-end;
     align-items: center;
-    height: 25%;
 }
 
-main aside {
-    border-left: 2px solid black;
-    width: 25%;
+aside div {
+    border: 2px solid black;
 }
 
 .col {
@@ -83,6 +79,22 @@ main aside {
 .col2 {
     flex: 2;
 }
-.row {
 
+.row {
+    margin: 4%;
+    height: 35%;
+}
+
+.row2 {
+    margin: 5%;
+    height: 35%;
+    width: 50%;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#bold {
+    font-weight: bold;
 }

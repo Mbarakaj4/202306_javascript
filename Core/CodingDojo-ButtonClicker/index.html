@@ -22,20 +22,40 @@
    <main>
       <div class="col2">
          <article class="row">
-            <h1>Ninja</h1>
-            <p>noun</p>
-            <p>Plural: <span>Ninjas</span></p>
-            <button type="button" onclick="addLikes()">Like</button>
+            <div class="article-header">
+               <h1>Ninja</h1>
+               <p>noun</p>
+               <p>Plural: <span id="italic">Ninjas</span></p>
+               <button type="button" onclick="addLikes()">Like</button>
+            </div>
+            <div class="article-main">
+               <p>
+                  A practitioner skilled in the <br>
+                  <a href="#">Japanese</a> art of <a href="#">ninjitsu</a>
+               </p>
+            </div>
          </article>
          <article class="row">
-            <h1>Ninja</h1>
-            <p>noun</p>
-            <p>Plural: <span>Ninjas</span></p>
-            <button type="button" onclick="addLikes()">Like</button>
+            <div class="article-header">
+               <h1>Ninja</h1>
+               <p>noun</p>
+               <p>Plural: <span id="italic">Ninjas</span></p>
+               <button type="button" onclick="addLikes()">Like</button>
+            </div>
+            <div class="article-main">
+               <p>
+                  A <a href="#">programmer</a> who breaks<br>
+                  down problems with <a href="#">zen</a> like<br>
+                  focus
+               </p>
+            </div>
          </article>
       </div>
       <aside class="col">
-         <!--To Do-->
+         <div class="row2">
+            <p>Dojonary is defined by <span id="bold">YOU</span></p>
+            <button type="button" onclick="hide(this)">Add definition</button>
+         </div>
       </aside>
    </main>
 </body>
