@@ -65,6 +65,7 @@ body {
 }
 
 .placeholder svg {
+    display: none;
     border-radius: 10px;
 }
 
