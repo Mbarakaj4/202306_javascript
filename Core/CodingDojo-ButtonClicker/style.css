@@ -68,16 +68,37 @@ main article {
     align-items: center;
 }
 
+article div {
+    display: inline-block;
+}
+
 aside div {
     border: 2px solid black;
 }
 
+aside p {
+    margin: 10px;
+}
+
+aside button {
+    height: 35px;
+    width: 135px;
+    margin: 10px;
+    background-color: olivedrab;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+    box-shadow: 5px 5px black;
+    align-items: center;
+}
 .col {
     flex: 1;
+    margin-right: -8.5%;
 }
 
 .col2 {
     flex: 2;
+    margin-left: 3.3%;
 }
 
 .row {
@@ -86,9 +107,32 @@ aside div {
 }
 
 .row2 {
-    margin: 5%;
+    margin: 8%;
     height: 35%;
     width: 50%;
+}
+
+.article-header {
+    margin: 25px 140px 0px 40px;
+}
+
+.article-header button {
+    margin-top: 20px;
+    height: 35px;
+    width: 100px;
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+    box-shadow: 5px 5px black;
+    align-items: center;
+}
+
+.article-main {
+    display: flex;
+    justify-content: center;
+    margin-left: 155px;
+    margin-top: -90px;
 }
 
 #italic {
