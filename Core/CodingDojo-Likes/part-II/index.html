@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <title>Likes</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <h1>Network</h1>
+    </header>
+    <h1>Your feed</h1>
+    <!-- Main container -->
+    <main>
+        <!-- User card -->
+        <aside>
+            <article>
+                <img src="assets/user.png" alt="user.png">
+                <a href="#" target="_blank" rel="noopener noreferrer">Add an avatar</a>
+                <h1>James Doe</h1>
+            </article>
+        </aside>
+        <!-- Posts -->
+        <div class="article-container">
+            <article>
+                <div class="article-header">
+                    <h4>Neil M</h4>
+                    <div class="like-container">
+                        <p><span id="number">3</span> Like(s)</p>
+                        <button type="button" onclick="like('')">Like</button>
+                    </div>
+                </div>
+                <div class="article-body">
+                    <p>I just set up this new discord bot, let me <br>
+                        know what you all think. <a href="#" target="_blank" rel="noopener noreferrer">Link</a></p>
+                </div>
+            </article>
+            <article>
+                <div class="article-header">
+                    <h4>Nicole K</h4>
+                    <div class="like-container">
+                        <p><span id="number1">3</span> Like(s)</p>
+                        <button type="button" onclick="like('1')">Like</button>
+                    </div>
+                </div>
+                <div class="article-body">
+                    <p>Just finished my <a href="#" target="_blank" rel="noopener noreferrer">next comic</a>, check it out</p>
+                </div>
+            </article>
+            <article>
+                <div class="article-header">
+                    <h4>Jim R</h4>
+                    <div class="like-container">
+                        <p><span id="number2">3</span> Like(s)</p>
+                        <button type="button" onclick="like('2')">Like</button>
+                    </div>
+                </div>
+                <div class="article-body">
+                    <p>I can't stop listening to the <a href="#" target="_blank" rel="noopener noreferrer">new album</a>. <br>
+                    Who else is liking it?</p>
+                </div>
+            </article>
+        </div>
+
+    </main>
+    <!-- Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
