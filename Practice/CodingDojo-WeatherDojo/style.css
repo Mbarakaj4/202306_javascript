@@ -8,19 +8,56 @@
     text-decoration: none;
 }
 
-nav {
-    background-color: aqua;
+header {
+    background-color: #9FC5F8;
     height: 75px;
 }
 
-.nav-left {
-    background-color: gray;
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
     max-width: 1000px;
     margin: auto;
+    align-items: center;
+}
+
+nav p {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .nav-right {
-    background-color: rebeccapurple;
+    max-width: 1000px;
+}
+
+.nav-right a {
+    margin-left: 45px;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-subheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1000px;
     margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.nav-subheader > p {
+    font-size: 25px;
+    font-weight: 700;
+}
+.temperature-selector{
+    display: flex;
+}
+
+.temperature-selector p {
+    margin-right: 10px;
 }

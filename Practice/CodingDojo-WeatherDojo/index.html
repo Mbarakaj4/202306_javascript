@@ -11,18 +11,27 @@
 <body>
     <header>
         <nav>
-            <div class="nav-left">
-                <p>DojoWeather</p>
-            </div>
+            <p>DojoWeather</p>
             <div class="nav-right">
-                <a href="#">Burbank</a>
-                <a href="#">Chicago</a>
-                <a href="#">Dallas</a>
+                <a href="#" onclick="cAlert()">Burbank</a>
+                <a href="#" onclick="cAlert()">Chicago</a>
+                <a href="#" onclick="cAlert()">Dallas</a>
             </div>
         </nav>
-
     </header>
-
+    <main>
+        <div class="nav-subheader">
+            <p>San Jose</p>
+            <div class="temperature-selector">
+                <p>show temperature in </p>
+                <select name="temperature" id="temp">
+                    <option value="celsius" onclick="tempSel(this)">ºC</option>
+                    <option value="fahrenheit" onclick="tempSel(this)">ºF</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
