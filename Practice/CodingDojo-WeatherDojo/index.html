@@ -21,7 +21,7 @@
     </header>
     <main>
         <div class="nav-subheader">
-            <p>San Jose</p>
+            <h2>San Jose</h2>
             <div class="temperature-selector">
                 <p>show temperature in </p>
                 <select name="temperature" id="temp">
@@ -29,6 +29,21 @@
                     <option value="fahrenheit" onclick="tempSel(this)">ºF</option>
                 </select>
             </div>
+        </div>
+        <div class="card-container">
+            <article>
+                <div class="card-header">
+                    <p class="card-title">Today</p>
+                </div>
+                <img src="assets/some_rain.png" alt="">
+                <div class="card-body">
+                    <p>Some rain</p>
+                    <div class="card-temperature">
+                        <p id="max"><span class="card-temp">24</span>º</p>
+                        <p id="min"><span class="card-temp">18</span>º</p>
+                    </div>
+                </div>
+            </article>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>

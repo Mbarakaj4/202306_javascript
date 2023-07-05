@@ -50,10 +50,6 @@ nav p {
     border-bottom: 2px solid black;
 }
 
-.nav-subheader > p {
-    font-size: 25px;
-    font-weight: 700;
-}
 .temperature-selector{
     display: flex;
 }
