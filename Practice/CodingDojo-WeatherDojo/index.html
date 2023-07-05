@@ -24,29 +24,83 @@
             <h2>San Jose</h2>
             <div class="temperature-selector">
                 <p>show temperature in </p>
-                <select name="temperature" id="temp">
-                    <option value="celsius" onclick="tempSel(this)">ºC</option>
-                    <option value="fahrenheit" onclick="tempSel(this)">ºF</option>
+                <select name="temperature" id="temp" >
+                    <option value="celsius">ºC</option>
+                    <option value="fahrenheit">ºF</option>
                 </select>
             </div>
         </div>
         <div class="card-container">
             <article>
                 <div class="card-header">
-                    <p class="card-title">Today</p>
+                    <h3 class="card-title">Today</h3>
                 </div>
                 <img src="assets/some_rain.png" alt="">
                 <div class="card-body">
                     <p>Some rain</p>
                     <div class="card-temperature">
-                        <p id="max"><span class="card-temp">24</span>º</p>
-                        <p id="min"><span class="card-temp">18</span>º</p>
+                        <p class="max"><span class="card-temp">24</span>º</p>
+                        <p class="min"><span class="card-temp">18</span>º</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="card-header">
+                    <h3 class="card-title">Tomorrow</h3>
+                </div>
+                <img src="assets/some_sun.png" alt="">
+                <div class="card-body">
+                    <p>Some sun </p>
+                    <div class="card-temperature">
+                        <p class="max"><span class="card-temp">27</span>º</p>
+                        <p class="min"><span class="card-temp">19</span>º</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="card-header">
+                    <h3 class="card-title">Friday</h3>
+                </div>
+                <img src="assets/some_clouds.png" alt="">
+                <div class="card-body">
+                    <p>Some clouds</p>
+                    <div class="card-temperature">
+                        <p class="max"><span class="card-temp">21</span>º</p>
+                        <p class="min"><span class="card-temp">16</span>º</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="card-header">
+                    <h3 class="card-title">Saturday</h3>
+                </div>
+                <img src="assets/some_sun.png" alt="">
+                <div class="card-body">
+                    <p>Some sun </p>
+                    <div class="card-temperature">
+                        <p class="max"><span class="card-temp">26</span>º</p>
+                        <p class="min"><span class="card-temp">21</span>º</p>
                     </div>
                 </div>
             </article>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <div class="cookie-banner">
+        <div class="cookie-head">
+            <img src="assets/cookie.png" alt="cookie">
+        </div>
+        <div class="cookie-body">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize <br>
+            content and ads, to provide social media features and to <br>
+            analyse our trafic. <a href="#">read more...</a></p>
+        </div>
+        <div class="cookie-btn">
+            <a href="#" onclick="cAccept()">I Accept</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
