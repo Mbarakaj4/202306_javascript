@@ -95,10 +95,10 @@ article {
     min-width: 200px;
 }
 
-#max {
+.max {
     color: red;
 }
-#min {
+.min {
     color: #5892E4;
 }
 
